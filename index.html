@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Untuk Rachel Nisi ❤️</title>
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+
+    min-height: 100vh;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    color: #fff;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #55203f 0%,
+            #241322 38%,
+            #0c0810 100%
+        );
+
+    overflow-x: hidden;
+}
+
+
+/* =====================================================
+   STAR BACKGROUND
+===================================================== */
+
+.stars {
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    opacity: .35;
+
+    background-image:
+
+        radial-gradient(
+            circle,
+            rgba(255,255,255,.9) 1px,
+            transparent 1px
+        );
+
+    background-size: 70px 70px;
+
+    animation:
+        starsMove 25s linear infinite;
+
+}
+
+@keyframes starsMove {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(70px);
+    }
+
+}
+
+
+/* =====================================================
+   SCREEN
+===================================================== */
+
+.screen {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 25px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.card {
+
+    width: 100%;
+
+    max-width: 680px;
+
+    padding: 50px 35px;
+
+    text-align: center;
+
+    background:
+        rgba(255,255,255,.065);
+
+    border:
+        1px solid
+        rgba(255,255,255,.15);
+
+    backdrop-filter:
+        blur(20px);
+
+    -webkit-backdrop-filter:
+        blur(20px);
+
+    border-radius: 32px;
+
+    box-shadow:
+        0 30px 100px
+        rgba(0,0,0,.55);
+
+    animation:
+        cardIn .8s ease;
+
+}
+
+@keyframes cardIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(35px)
+            scale(.96);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+
+/* =====================================================
+   HIDDEN
+===================================================== */
+
+.hidden {
+    display: none !important;
+}
+
+
+/* =====================================================
+   TYPOGRAPHY
+===================================================== */
+
+.eyebrow {
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    color: #d7a9c6;
+
+    margin-bottom: 18px;
+
+}
+
+h1 {
+
+    font-size:
+        clamp(
+            35px,
+            7vw,
+            58px
+        );
+
+    line-height: 1.15;
+
+    margin-bottom: 25px;
+
+    font-weight: 400;
+
+}
+
+h1 span {
+
+    color: #ff9dca;
+
+}
+
+p {
+
+    color: #ded5dc;
+
+    font-size: 16px;
+
+    line-height: 1.95;
+
+}
+
+.quote {
+
+    margin-top: 28px;
+
+    padding:
+        20px 15px;
+
+    color: #cdbbc9;
+
+    font-style: italic;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================================
+   EMOJI
+===================================================== */
+
+.big-icon {
+
+    font-size: 65px;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+button {
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+
+}
+
+
+/* MAIN BUTTON */
+
+.primary {
+
+    margin-top: 32px;
+
+    padding:
+        16px 30px;
+
+    border-radius: 100px;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: .5px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e95091,
+            #ff9dca
+        );
+
+    box-shadow:
+        0 12px 35px
+        rgba(233,80,145,.28);
+
+}
+
+.primary:hover {
+
+    transform:
+        translateY(-3px)
+        scale(1.04);
+
+    box-shadow:
+        0 16px 45px
+        rgba(233,80,145,.4);
+
+}
+
+
+/* =====================================================
+   YES / NO
+===================================================== */
+
+.choice-area {
+
+    position: relative;
+
+    min-height: 100px;
+
+    margin-top: 32px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 16px;
+
+}
+
+.yes-button {
+
+    padding:
+        16px 28px;
+
+    border-radius: 100px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e95091,
+            #ff9dca
+        );
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(233,80,145,.3);
+
+}
+
+.yes-button:hover {
+
+    transform:
+        scale(1.05);
+
+}
+
+
+.no-button {
+
+    padding:
+        15px 25px;
+
+    border-radius: 100px;
+
+    color: #d6cbd3;
+
+    background:
+        rgba(255,255,255,.08);
+
+    border:
+        1px solid
+        rgba(255,255,255,.15);
+
+    font-weight: bold;
+
+}
+
+
+/* =====================================================
+   HINT
+===================================================== */
+
+.hint {
+
+    margin-top: 18px;
+
+    min-height: 22px;
+
+    color: #a995a5;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    font-size: 12px;
+
+}
+
+
+/* =====================================================
+   RESTAURANT OPTIONS
+===================================================== */
+
+.restaurant-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 14px;
+
+    margin-top: 32px;
+
+}
+
+.restaurant {
+
+    padding: 25px 14px;
+
+    border-radius: 22px;
+
+    background:
+        rgba(255,255,255,.055);
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+
+    cursor: pointer;
+
+    transition:
+        .25s ease;
+
+}
+
+.restaurant:hover {
+
+    transform:
+        translateY(-7px);
+
+    border-color:
+        rgba(255,157,202,.7);
+
+    background:
+        rgba(255,157,202,.1);
+
+}
+
+.restaurant.selected {
+
+    transform:
+        translateY(-5px);
+
+    border:
+        2px solid
+        #ff9dca;
+
+    background:
+        rgba(255,157,202,.12);
+
+    box-shadow:
+        0 10px 35px
+        rgba(255,100,170,.15);
+
+}
+
+.restaurant-icon {
+
+    font-size: 43px;
+
+    margin-bottom: 14px;
+
+}
+
+.restaurant-name {
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+}
+
+.restaurant-desc {
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    color: #a99da7;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =====================================================
+   CONFIRMATION
+===================================================== */
+
+.confirmation {
+
+    margin-top: 28px;
+
+    padding: 25px;
+
+    border-radius: 22px;
+
+    background:
+        rgba(255,255,255,.055);
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    animation:
+        cardIn .5s ease;
+
+}
+
+.confirmation-text {
+
+    line-height: 1.8;
+
+    color: #e8dce5;
+
+}
+
+
+/* =====================================================
+   WHATSAPP BUTTON
+===================================================== */
+
+.whatsapp {
+
+    margin-top: 22px;
+
+    padding:
+        15px 28px;
+
+    border-radius: 100px;
+
+    background:
+        #25D366;
+
+    color: white;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 10px 30px
+        rgba(37,211,102,.18);
+
+}
+
+.whatsapp:hover {
+
+    transform:
+        scale(1.05);
+
+}
+
+
+/* =====================================================
+   FINAL
+===================================================== */
+
+.final-title {
+
+    font-size:
+        clamp(
+            32px,
+            6vw,
+            48px
+        );
+
+    color: #ff9dca;
+
+    margin-bottom: 25px;
+
+}
+
+.signature {
+
+    margin-top: 35px;
+
+    color: #ffb5d5;
+
+    font-style: italic;
+
+}
+
+
+/* =====================================================
+   HEARTS
+===================================================== */
+
+.heart {
+
+    position: fixed;
+
+    bottom: -40px;
+
+    font-size: 20px;
+
+    pointer-events: none;
+
+    z-index: 20;
+
+    animation:
+        heartFloat 5s linear forwards;
+
+}
+
+@keyframes heartFloat {
+
+    from {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity: 1;
+
+    }
+
+    to {
+
+        transform:
+            translateY(-110vh)
+            rotate(25deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width: 600px) {
+
+    .card {
+
+        padding:
+            40px 20px;
+
+    }
+
+    .restaurant-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .restaurant {
+
+        display: flex;
+
+        align-items: center;
+
+        text-align: left;
+
+        gap: 15px;
+
+    }
+
+    .restaurant-icon {
+
+        margin: 0;
+
+        font-size: 38px;
+
+    }
+
+    .choice-area {
+
+        min-height: 130px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="stars"></div>
+
+
+<div class="screen">
+
+
+<!-- =====================================================
+     SCREEN 01 — OPENING
+===================================================== -->
+
+<section
+    class="card"
+    id="screen1">
+
+    <div class="big-icon">
+        🌙
+    </div>
+
+    <div class="eyebrow">
+        A little story from Josua
+    </div>
+
+    <h1>
+        Untuk
+        <span>Rachel.</span>
+    </h1>
+
+    <p>
+
+        Ada beberapa hal yang terlalu besar
+        untuk disampaikan hanya lewat sebuah chat.
+
+        <br><br>
+
+        Jadi kali ini,
+        izinkan aku menyampaikannya
+        sedikit demi sedikit.
+
+    </p>
+
+    <div class="quote">
+
+        “Bukan untuk memaksamu kembali,
+        hanya ingin menunjukkan
+        bahwa masih ada bagian dari hatiku
+        yang belum pernah berhenti memilihmu.”
+
+    </div>
+
+    <button
+        class="primary"
+        onclick="nextScreen(1,2)">
+
+        MULAI CERITA →
+
+    </button>
+
+</section>
+
+
+<!-- =====================================================
+     SCREEN 02 — DINNER
+===================================================== -->
+
+<section
+    class="card hidden"
+    id="screen2">
+
+    <div class="big-icon">
+        🍽️
+    </div>
+
+    <div class="eyebrow">
+        Satu permintaan kecil
+    </div>
+
+    <h1>
+        Rachel,
+        <span>maukah?</span>
+    </h1>
+
+    <p>
+
+        Kalau aku boleh meminta satu malam darimu,
+        aku tidak ingin malam itu menjadi tentang
+        masa lalu.
+
+        <br><br>
+
+        Aku ingin kita duduk berhadapan,
+        makan sesuatu yang kamu suka,
+        lalu berbicara seperti dua orang
+        yang pernah saling menemukan
+        sebelum semuanya menjadi begitu rumit.
+
+        <br><br>
+
+        <strong>
+        Maukah kamu makan malam denganku?
+        </strong>
+
+    </p>
+
+
+    <div class="choice-area">
+
+        <button
+            class="yes-button"
+            onclick="nextScreen(2,3)">
+
+            ❤️ Aku mau
+
+        </button>
+
+
+        <button
+            class="no-button"
+            id="noButton">
+
+            🌙 Tidak
+
+        </button>
+
+    </div>
+
+
+    <div
+        class="hint"
+        id="noHint">
+
+        Tidak apa-apa...
+        tapi jangan buru-buru pergi.
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SCREEN 03 — RESTAURANT
+===================================================== -->
+
+<section
+    class="card hidden"
+    id="screen3">
+
+    <div class="big-icon">
+        🍴
+    </div>
+
+    <div class="eyebrow">
+        Kalau kamu bersedia
+    </div>
+
+    <h1>
+        Kamu ingin
+        <span>makan di mana?</span>
+    </h1>
+
+    <p>
+
+        Kali ini biarkan kamu yang memilih.
+
+        <br><br>
+
+        Karena bagiku,
+        tempatnya tidak pernah menjadi
+        bagian terpenting.
+
+        <br><br>
+
+        Yang penting adalah
+        <strong>siapa yang duduk di hadapanku.</strong>
+
+    </p>
+
+
+    <div class="restaurant-grid">
+
+
+        <!-- MARUGAME -->
+
+        <div
+            class="restaurant"
+            onclick="chooseRestaurant(
+                this,
+                'Marugame Udon'
+            )">
+
+            <div class="restaurant-icon">
+                🍜
+            </div>
+
+            <div>
+
+                <div class="restaurant-name">
+                    Marugame Udon
+                </div>
+
+                <div class="restaurant-desc">
+                    Sederhana,
+                    tapi mungkin malamnya
+                    tidak sesederhana itu.
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- STEAK -->
+
+        <div
+            class="restaurant"
+            onclick="chooseRestaurant(
+                this,
+                'Steak 21'
+            )">
+
+            <div class="restaurant-icon">
+                🥩
+            </div>
+
+            <div>
+
+                <div class="restaurant-name">
+                    Steak 21
+                </div>
+
+                <div class="restaurant-desc">
+                    Untuk malam yang sedikit
+                    lebih istimewa.
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BASO -->
+
+        <div
+            class="restaurant"
+            onclick="chooseRestaurant(
+                this,
+                'Baso Samrat'
+            )">
+
+            <div class="restaurant-icon">
+                🍲
+            </div>
+
+            <div>
+
+                <div class="restaurant-name">
+                    Baso Samrat
+                </div>
+
+                <div class="restaurant-desc">
+                    Tidak perlu mewah
+                    untuk menjadi berarti.
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- CONFIRM -->
+
+    <div
+        class="confirmation hidden"
+        id="confirmation">
+
+        <div
+            class="confirmation-text"
+            id="confirmationText">
+        </div>
+
+
+        <button
+            class="primary"
+            onclick="nextScreen(3,4)">
+
+            LANJUTKAN CERITA →
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SCREEN 04 — DEEPER MESSAGE
+===================================================== -->
+
+<section
+    class="card hidden"
+    id="screen4">
+
+    <div class="big-icon">
+        🌧️
+    </div>
+
+    <div class="eyebrow">
+        Ada satu hal lagi
+    </div>
+
+    <h1>
+        Tentang
+        <span>kita.</span>
+    </h1>
+
+    <p>
+
+        Rachel...
+
+        <br><br>
+
+        Aku tidak tahu sebesar apa badai
+        yang masih menunggu kita di depan.
+
+        <br><br>
+
+        Mungkin akan ada hari ketika kita
+        kembali salah paham.
+
+        <br>
+
+        Mungkin akan ada hari ketika aku
+        kembali mengecewakanmu.
+
+        <br>
+
+        Mungkin akan ada hari ketika hidup
+        terasa terlalu berat untuk kita jalani.
+
+        <br><br>
+
+        Tapi kalau suatu hari nanti
+        Tuhan benar-benar memberi kita
+        kesempatan untuk berjalan sejauh itu...
+
+    </p>
+
+
+    <div class="quote">
+
+        Aku tidak ingin mencintaimu
+        hanya ketika kamu sedang mudah
+        untuk dicintai.
+
+        <br><br>
+
+        Aku ingin belajar mencintaimu
+        ketika kamu bahagia,
+        ketika kamu lelah,
+        ketika kamu marah,
+        ketika kamu diam.
+
+        <br><br>
+
+        Ketika hidup sedang baik kepada kita,
+        maupun ketika hidup sedang
+        tidak berpihak kepada kita.
+
+    </div>
+
+
+    <button
+        class="primary"
+        onclick="nextScreen(4,5)">
+
+        AKU MASIH INGIN MEMILIH →
+
+    </button>
+
+</section>
+
+
+<!-- =====================================================
+     SCREEN 05 — MARRIAGE
+===================================================== -->
+
+<section
+    class="card hidden"
+    id="screen5">
+
+    <div class="big-icon">
+        💍
+    </div>
+
+    <div class="eyebrow">
+        Jika Tuhan mengizinkan
+    </div>
+
+    <h1>
+        Suatu hari nanti...
+    </h1>
+
+    <p>
+
+        Aku tidak menjanjikan hidup
+        tanpa badai.
+
+        <br><br>
+
+        Aku hanya ingin menjadi seseorang
+        yang tetap menggenggam tanganmu
+        ketika badai itu datang.
+
+        <br><br>
+
+        Karena kalau suatu hari nanti
+        aku benar-benar memanggilmu
+        <strong>istriku</strong>...
+
+        <br><br>
+
+        aku ingin kata itu bukan sekadar
+        sebuah status.
+
+        <br><br>
+
+        Aku ingin itu menjadi janji:
+
+    </p>
+
+
+    <div class="quote">
+
+        “Setelah semua yang pernah kita lewati,
+        aku masih memilihmu.
+
+        <br><br>
+
+        Bukan karena kamu sempurna,
+        tetapi karena aku mencintai
+        seluruh perjalananmu.
+
+        <br><br>
+
+        Bahkan bagian-bagianmu
+        yang tidak selalu mudah.”
+
+    </div>
+
+
+    <p style="margin-top:25px;">
+
+        Aku tidak meminta kamu
+        menjawab semua itu malam ini.
+
+        <br><br>
+
+        Aku hanya ingin kamu tahu
+        bahwa ketika aku membayangkan
+        masa depan...
+
+        <br><br>
+
+        <strong>
+        aku masih sering menemukanmu
+        di dalamnya.
+        </strong>
+
+    </p>
+
+
+    <button
+        class="primary"
+        onclick="nextScreen(5,6)">
+
+        SATU PERTANYAAN TERAKHIR →
+
+    </button>
+
+</section>
+
+
+<!-- =====================================================
+     SCREEN 06 — FINAL
+===================================================== -->
+
+<section
+    class="card hidden"
+    id="screen6">
+
+    <div class="big-icon">
+        ❤️
+    </div>
+
+    <div class="eyebrow">
+        Dinner Quest
+    </div>
+
+    <div class="final-title">
+        Rachel Nisi
+    </div>
+
+    <p>
+
+        Aku tidak tahu apakah satu makan malam
+        bisa memperbaiki semua yang pernah rusak.
+
+        <br><br>
+
+        Aku juga tidak tahu
+        ke mana cerita ini akan membawa kita.
+
+        <br><br>
+
+        Dan aku tidak ingin memaksamu
+        menjawab sesuatu sebesar masa depan
+        malam ini.
+
+        <br><br>
+
+        Aku cuma ingin bertemu.
+
+        <br>
+
+        Duduk bersamamu.
+
+        <br>
+
+        Makan.
+
+        <br>
+
+        Bicara.
+
+        <br>
+
+        Mendengar.
+
+        <br><br>
+
+        Lalu membiarkan waktu
+        menunjukkan apakah dua orang
+        yang pernah saling menemukan
+        masih bisa menemukan jalan
+        pulang ke satu sama lain.
+
+    </p>
+
+
+    <div class="quote">
+
+        Kalau suatu hari nanti
+        perjalanan ini benar-benar
+        membawa kita sampai ke pelaminan,
+
+        <br><br>
+
+        aku ingin mengingat bahwa semuanya
+        pernah dimulai dari satu malam sederhana:
+
+        <br><br>
+
+        <strong>
+        Aku mengajakmu makan,
+        dan kamu memilih untuk tinggal.
+        </strong>
+
+    </div>
+
+
+    <div class="signature">
+
+        — Josua Abraham
+
+    </div>
+
+
+    <button
+        class="whatsapp"
+        onclick="sendWhatsApp()">
+
+        💌 KIRIM JAWABANKU KE JOSUA
+
+    </button>
+
+</section>
+
+
+</div>
+
+
+<script>
+
+
+/* =====================================================
+   DATA
+===================================================== */
+
+let selectedRestaurant = "";
+
+
+/* =====================================================
+   SCREEN NAVIGATION
+===================================================== */
+
+function nextScreen(
+    current,
+    next
+) {
+
+    document
+        .getElementById(
+            "screen" + current
+        )
+        .classList
+        .add("hidden");
+
+
+    document
+        .getElementById(
+            "screen" + next
+        )
+        .classList
+        .remove("hidden");
+
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+
+
+/* =====================================================
+   RESTAURANT SELECTION
+===================================================== */
+
+function chooseRestaurant(
+    element,
+    restaurant
+) {
+
+    selectedRestaurant =
+        restaurant;
+
+
+    document
+        .querySelectorAll(
+            ".restaurant"
+        )
+        .forEach(item => {
+
+            item.classList
+                .remove("selected");
+
+        });
+
+
+    element
+        .classList
+        .add("selected");
+
+
+    const confirmation =
+        document
+        .getElementById(
+            "confirmation"
+        );
+
+
+    const text =
+        document
+        .getElementById(
+            "confirmationText"
+        );
+
+
+    confirmation
+        .classList
+        .remove("hidden");
+
+
+    text.innerHTML = `
+
+        Jadi...
+
+        <br><br>
+
+        <strong>
+        malam kita nanti di
+        ${restaurant}? ❤️
+        </strong>
+
+        <br><br>
+
+        Dari sekian banyak tempat,
+        kamu memilih tempat ini.
+
+        <br><br>
+
+        Semoga nanti yang kita bawa pulang
+        bukan cuma rasa kenyang,
+        tapi juga sedikit keberanian
+        untuk membicarakan kita.
+
+    `;
+
+}
+
+
+/* =====================================================
+   WHATSAPP
+===================================================== */
+
+function sendWhatsApp() {
+
+    if (!selectedRestaurant) {
+
+        alert(
+            "Pilih tempat makan dulu ❤️"
+        );
+
+        return;
+
+    }
+
+
+    const phone =
+        "6287887599468";
+
+
+    const message =
+
+`Hai Josua ❤️
+
+Aku sudah sampai di akhir ceritamu.
+
+Untuk makan malam itu,
+aku memilih:
+
+🍽️ ${selectedRestaurant}
+
+Jadi...
+
+kapan kita makan?
+
+— Rachel`;
+
+
+    const whatsappURL =
+        "https://wa.me/"
+        + phone
+        + "?text="
+        + encodeURIComponent(
+            message
+        );
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+
+    createHearts();
+
+}
+
+
+/* =====================================================
+   TOMBOL TIDAK KABUR
+===================================================== */
+
+const noButton =
+    document.getElementById(
+        "noButton"
+    );
+
+const noHint =
+    document.getElementById(
+        "noHint"
+    );
+
+
+let escapeCount = 0;
+
+
+function escapeNoButton() {
+
+    escapeCount++;
+
+
+    const messages = [
+
+        "Tunggu... aku belum selesai. 😌",
+
+        "Jangan buru-buru pergi, Rachel.",
+
+        "Aku cuma minta satu malam.",
+
+        "Tombolnya ternyata pemalu. 😭",
+
+        "Kok malah dikejar? 😂",
+
+        "Aku tahu kamu bisa menangkapnya...",
+
+        "Tapi boleh kasih aku kesempatan dulu?",
+
+        "Satu malam. Tidak lebih dari itu.",
+
+        "Setidaknya dengarkan aku sampai selesai. ❤️"
+
+    ];
+
+
+    noHint.textContent =
+        messages[
+            Math.min(
+                escapeCount - 1,
+                messages.length - 1
+            )
+        ];
+
+
+    /*
+       Desktop
+    */
+
+    if (
+        window.innerWidth > 600
+    ) {
+
+        const area =
+            noButton.parentElement
+            .getBoundingClientRect();
+
+
+        const button =
+            noButton.getBoundingClientRect();
+
+
+        const maxX =
+            Math.max(
+                50,
+                area.width -
+                button.width -
+                20
+            );
+
+
+        const randomX =
+            Math.random() *
+            maxX -
+            maxX / 2;
+
+
+        const randomY =
+            Math.random() *
+            120 -
+            60;
+
+
+        noButton.style.position =
+            "absolute";
+
+
+        noButton.style.transform =
+            `translate(
+                ${randomX}px,
+                ${randomY}px
+            )`;
+
+    }
+
+
+    /*
+       Ubah tulisan setelah beberapa kali
+    */
+
+    if (
+        escapeCount === 3
+    ) {
+
+        noButton.textContent =
+            "😳 Yakin?";
+
+    }
+
+
+    if (
+        escapeCount === 6
+    ) {
+
+        noButton.textContent =
+            "🥹 Satu malam aja";
+
+    }
+
+
+    if (
+        escapeCount === 9
+    ) {
+
+        noButton.textContent =
+            "❤️ Tolong dengarkan dulu";
+
+    }
+
+}
+
+
+/*
+   Desktop
+*/
+
+noButton.addEventListener(
+    "mouseenter",
+    escapeNoButton
+);
+
+
+/*
+   Mobile
+*/
+
+noButton.addEventListener(
+    "touchstart",
+    function(event) {
+
+        event.preventDefault();
+
+        escapeNoButton();
+
+    }
+);
+
+
+/*
+   Kalau berhasil diklik
+*/
+
+noButton.addEventListener(
+    "click",
+    function() {
+
+        noHint.textContent =
+            "Kamu berhasil menangkapnya... tapi setidaknya izinkan aku menyelesaikan ceritaku. ❤️";
+
+    }
+);
+
+
+/* =====================================================
+   HEART ANIMATION
+===================================================== */
+
+function createHearts() {
+
+    for (
+        let i = 0;
+        i < 25;
+        i++
+    ) {
+
+        setTimeout(() => {
+
+            const heart =
+                document.createElement(
+                    "div"
+                );
+
+
+            heart.className =
+                "heart";
+
+
+            const heartTypes = [
+
+                "❤️",
+                "💕",
+                "💗",
+                "💖",
+                "✨"
+
+            ];
+
+
+            heart.textContent =
+                heartTypes[
+                    Math.floor(
+                        Math.random() *
+                        heartTypes.length
+                    )
+                ];
+
+
+            heart.style.left =
+                Math.random() *
+                100 +
+                "vw";
+
+
+            heart.style.animationDuration =
+                (
+                    3 +
+                    Math.random() * 3
+                ) +
+                "s";
+
+
+            document.body
+                .appendChild(
+                    heart
+                );
+
+
+            setTimeout(() => {
+
+                heart.remove();
+
+            }, 6000);
+
+
+        }, i * 120);
+
+    }
+
+}
+
+</script>
+
+
+</body>
+</html>
